@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             x:Class="LMS.PopTaskView">
+
+
+    <StackLayout Margin="12"
+                 Padding="24"
+                 BackgroundColor="WhiteSmoke"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center">
+        <Label Text="DETAILS" FontSize="Medium" HorizontalOptions="Center"/>
+        
+        <StackLayout Orientation="Horizontal">
+            <Label Text= "Title:" />
+            <Label Text= "{Binding name}"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text= "Author:" />
+            <Label Text= "{Binding authorName}"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text= "ISBN:" />
+            <Label Text= "{Binding ISBN}"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text= "Year:" />
+            <Label Text= "{Binding year}"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text= "Pages:" />
+            <Label Text= "{Binding pages}"/>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal">
+            <Label Text= "Language:" />
+            <Label Text= "{Binding language}"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text= "Rating:" />
+            <Label Text= "{Binding rating}"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text= "Genre:" />
+            <Label Text= "{Binding genre}"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text= "Available:" />
+            <Label Text= "{Binding available}"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Save" Clicked="addToCart"></Button>
+            <Button Text="Rent" Clicked="rent"></Button>
+            <Button Text="Rate" Clicked="rate"></Button>
+        </StackLayout>
+    </StackLayout>
+        
+</pages:PopupPage>

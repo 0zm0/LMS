@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LMS.Views.Home">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+ Add Book" Activated="ToolbarItem_Activated"/>
+        <ToolbarItem Text="Remove Book" Activated="ToolbarItem_Activated_1"/>
+        <ToolbarItem Text="Cart" Activated="ToolbarItem_Activated_2"/>
+        <ToolbarItem Text="Search" Activated="ToolbarItem_Activated_3"/>
+    </ContentPage.ToolbarItems>
+
+    <ListView x:Name="booksList" ItemTapped="OnPopupTask">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding bookName}" Detail="{Binding bookAuthor}"/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Button VerticalOptions="CenterAndExpand" Text="Logout" TextColor="#0077be" Clicked="Logout"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

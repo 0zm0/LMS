@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LMS.AddNewBook">
+
+    <StackLayout Margin="10, 10, 10, 0">
+        <Entry x:Name="EntryBookName" Placeholder="Book name"/>
+        <Entry x:Name="EntryAuthor" Placeholder="Author"/>
+        <Entry x:Name="EntryISBN" Placeholder="ISBN"/>
+        <Entry x:Name="EntryYear" Placeholder="Year"/>
+        <Entry x:Name="EntryPages" Placeholder="Pages"/>
+        <Entry x:Name="EntryLanguage" Placeholder="Language"/>
+        <Entry x:Name="EntryRating" Placeholder="Rating"/>
+        <Entry x:Name="EntryGenre" Placeholder="Genre"/>
+        <Entry x:Name="EntryAvailable" Placeholder="Available"/>
+        
+        <Button Text="Add to database" Clicked="Button_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

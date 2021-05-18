@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LMS.Views.Rating">
+    <StackLayout VerticalOptions="CenterAndExpand">
+        <Label HorizontalTextAlignment="Center" TextColor="#fdcc0d" HorizontalOptions="Center">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span x:Name="Star1" FontSize="34" FontFamily="Icons">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                        </Span.GestureRecognizers>
+                    </Span>
+                    <Span x:Name="Star2" FontSize="34" FontFamily="Icons">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                        </Span.GestureRecognizers>
+                    </Span>
+                    <Span x:Name="Star3" FontSize="34" FontFamily="Icons">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
+                        </Span.GestureRecognizers>
+                    </Span>
+                    <Span x:Name="Star4" FontSize="34" FontFamily="Icons">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
+                        </Span.GestureRecognizers>
+                    </Span>
+                    <Span x:Name="Star5" FontSize="34" FontFamily="Icons">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"/>
+                        </Span.GestureRecognizers>
+                    </Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+</ContentPage>
